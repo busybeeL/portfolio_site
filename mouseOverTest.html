@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moseover test</title>
+</head>
+<body>
+    <style>
+        *, html {
+            padding: 0;
+            margin: 0;
+        }
+        #area {
+            cursor: pointer;
+            background: pink;
+            text-align: center;
+            width: 200px;
+            margin: 100px auto;
+        }
+        #area:hover{
+        }
+        span{
+            color: blue;
+            display: none;
+        }
+    </style>
+    <div id="area">
+        mouse over here!
+    </div>
+    <span id="text">Click here to copy email address!</span>
+    <script>
+        const area = document.getElementById('area');
+        const mouseOverText = document.getElementById('text');
+
+        area.addEventListener('mouseover',function(){
+            mouseOverText.style.display = 'block';
+        })
+
+        area.addEventListener('mouseout',function(){
+            mouseOverText.style.display = 'none';
+            mouseOverText.innerHTML = 'Click here to copy email address!';
+        })
+
+        area.addEventListener('click',function(){
+            mouseOverText.innerHTML = 'copied!';
+        })
+
+    </script>
+</body>
+</html>

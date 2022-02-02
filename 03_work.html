@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIWOO KIM - Front End Web Developer</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <div id="contact" class="contactPopupWrapper">
+        <div class="contactPopup">
+            <div onClick="closeContact()" class="closeBtn">
+            </div>
+            <div class="contactPopupContent">
+                <p>JIWOO KIM</p>
+                <p class="email" onClick="clipBoard()">jiwoooookim@gmail.com</p>
+                <span id="emailCopyText">Click here to copy Jiwoo's email address :)</span>
+                <p>
+                    <a href="https://www.linkedin.com/in/jiwoooookim/" target="_blank">LinkedIn, </a> 
+                    <a href="https://github.com/busybeeL" target="_blank">Github</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="mobileTopNav" class="mobileTopNavWrapper">
+        <div class="topNavContent">
+            <div onClick="mobileNavClose()" class="topNavCloseBtn"></div>
+            <ul>
+                <li>
+                    <a href="02_about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="03_work.html">WORK</a>
+                </li>
+                <li>
+                    <a onClick="openContact()">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="headerWrapper">
+            <div class="logoWrapper">
+                <a onClick="logoClick()">JIWOO KIM</a>
+            </div>
+            <div class="topNavWrapper">
+                <ul class="topNav">
+                    <li>
+                        <a href="02_about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="03_work.html">WORK</a>
+                    </li>
+                    <li>
+                        <a onClick="openContact()">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div onClick="mobileNavOpen()" class="topNavBtn">
+            </div>
+        </div>
+        <div class="contentWrapper">
+            <div class="portfolioBlockWrapper">
+                <ul class="portfolioBlock">
+                    <li>
+                        <div class="image">
+                            <a href="https://connectnorthkorea.org/" target="_blank">
+                                <img src="./src/images/work/work_connect.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Jun 2020 - Dec 2021<br/>
+                                Connect: North Korea
+                            </p>
+                            <p class="description">
+                                Connect: North Korea is a 
+                                charity organisationto support
+                                North Korean escapees in the 
+                                UK. They assist North Korean 
+                                communities realise their vision 
+                                to heal, grow and live the life 
+                                that they choose. I built this
+                                website for Connect: North 
+                                Korea as a volunteer web 
+                                developer. It is built in 
+                                customised WordPress theme. 
+                                The structure of this website 
+                                consists with static HTML and 
+                                LESS and the animations are 
+                                added using the Greensock 
+                                JavaScript library. It is scalable 
+                                from desktop to mobile with 
+                                media query.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="./src/images/work/work_code.jpg" alt="">
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Jan 2019 - Jun 2020<br/>
+                                CODE worldwide
+                            </p>
+                            <p class="description">
+                                CODE worldwide helps clients transform their business and brands through technology and data. One of their CMSs they own is called ADZU the automate web banner build system. I designed and prototyped responsive web banners to build and create bespoken responsive banner build to demo ADZU to clients and help them to settle on ADZU for their digital promotions. The banner build is based on pure HTML, CSS and JavaScript code. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <a href="https://www.foxybingo.com/en/games" target="_blank">
+                                <img src="./src/images/work/work_gvc.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Mar 2018 - Dec 2018<br/>
+                                GVC Group
+                            </p>
+                            <p class="description"> one of the biggest bingo game brand in the UK. They frequently release new promotions and update the look and feel of their sub brand websites so that I was on duties of creating new landing pages using HTML, LESS and JavaScript and updating styling for most common device sizes such as desktop, tablet PC and mobile phone.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <a href="https://britcent.uk/ko/landing/home.do" target="_blank">
+                                <img src="./src/images/work/work_britcent.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Jan 2017 - Feb 2017<br/>
+                                Britcent
+                            </p>
+                            <p class="description">
+                                Britcent is an english tutoring academy in the UK. Their newly built website had some problems such as containing unnecessarily heavy media resources and inappropriate size of UI design which decrease usability of the website. In order to optimise the website, I replaced the media resources in their website to reduced size or converted format files and updated CSS style with media query to make the UI design fits on various device sizes. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <a href="https://www.modnpay.kr/" target="_balnk">
+                                <img src="./src/images/work/work_modn.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Nov 2017 - Jun 2017<br/>
+                                MODN Pay
+                            </p>
+                            <p class="description">
+                                MODN Pay is one of the R&D projects in SEEROO. It is a payment system application for helping customers to pay through the integrated QR code. I transformed the design prototype to front end code using HTML, CSS and a bit of jQuery. It works on multiple browsers and devices to ensure compatibility of responsible web application. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="./src/images/work/work_fan.jpg" alt="">
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Nov 2017 - Jun 2017<br/>
+                                Shinhan FAN
+                            </p>
+                            <p class="description">
+                                Shinhan FAN is online shopping application for the users of Shinhan bank. The bank collaborate with major shopping brands in Korea so that they provide their  customers various promotions. As an interactive developer in this project, I design and update icons, and transform the design prototype to front end codes by using HTML, CSS, JavaScript. This mobile application works on multiple mobile device sizes. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="./src/images/work/work_lifeshop.jpg" alt="">
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Nov 2017 - Jun 2017<br/>
+                                MLife shop
+                            </p>
+                            <p class="description">
+                                MLife Shop is a mobile application for online shopping for the users of KB bank. The bank collaborate with major shopping brands in Korea so that they provide their  customers various promotions. As an interactive developer in this project, I design and update icons, and transform the design prototype to front end codes by using HTML, CSS, JavaScript. This mobile application works on multiple mobile device sizes. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="./src/images/work/work_kb.jpg" alt="">
+                        </div>
+                        <div class="textWrapper">
+                            <p class="title">
+                                Nov 2017 - Jun 2017<br/>
+                                KB Savings
+                            </p>
+                            <p class="description">
+                                KB bank renewed their mobile banking application with adding new pages. For this project, I worked on creating icons, new CSS style of the UI design and replacing the existing CSS to the new ones. Then, tested the frontend code in various mobile device sizes to ensure compatibility of responsible web application.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="personalProjectWrapper">
+                    <p>Would you like to see more fun stuff?</p>
+                        <a href="https://github.com/busybeeL" target="_blank">Check out my personal projects!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerWrapper">
+        ⓒ Copyright 2022 by JIWOO KIM
+    </div>
+    <script>
+        /* logo click */
+        function logoClick(){
+            if(window.innerWidth < 960) {
+                window.location.href = "./index.html";
+            } else {
+                window.location.href = "./00_intro.html";
+            }
+        }
+        /* mobile top nav */
+        const mobileNav = document.getElementById('mobileTopNav');
+        function mobileNavOpen(){
+            mobileNav.style.visibility = 'visible';
+            mobileNav.style.opacity = 1;
+        }
+        function mobileNavClose() {
+            mobileNav.style.visibility = 'hidden';
+            mobileNav.style.opacity = 0;
+        }
+        /* contact popup */
+        const contactPopup = document.getElementById('contact')
+        function openContact(){
+            contactPopup.style.visibility = 'visible';
+            contactPopup.style.opacity = 1;
+        }
+        function closeContact(){
+            contactPopup.style.visibility = 'hidden';
+            contactPopup.style.opacity = 0;
+
+        }
+        /* copy email address */
+        const eMail = document.querySelector('.email');
+        const eMailCopyText = document.getElementById('emailCopyText');
+        const onMouseMove = (e) => {
+            emailCopyText.style.left = e.pageX + 'px';
+            emailCopyText.style.top = e.pageY + 'px';
+        }
+        eMail.addEventListener('mousemove', onMouseMove);
+        eMail.addEventListener('mouseover', function(){
+            eMailCopyText.style.display = 'block';
+        })
+        eMail.addEventListener('mouseout', function(){
+            eMailCopyText.style.display = 'none';
+            eMailCopyText.innerHTML = "Click here to copy Jiwoo's email address :)!";
+        })
+        function clipBoard(){
+            navigator.clipboard.writeText(eMail.textContent);
+            eMailCopyText.innerHTML = 'Copied!';
+        }
+    </script>
+</body>
+</html>

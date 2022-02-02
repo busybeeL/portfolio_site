@@ -1,0 +1,879 @@
+/* GLOBAL */
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+/* INTRO */
+.introWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 260px;
+  padding-bottom: 260px;
+}
+@media only screen and (max-width: 1440px) {
+  .introWrapper {
+    padding-top: 160px;
+  }
+}
+.introWrapper .jiw {
+  font-size: 220px;
+  line-height: 1em;
+}
+.introWrapper .face {
+  position: relative;
+  width: 337px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introWrapper .face:before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  width: 10px;
+  height: 10px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #000;
+}
+.introWrapper .face:hover:before {
+  width: 30px;
+  height: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.introWrapper .face:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  width: 7px;
+  height: 7px;
+  transition: 0.5s;
+  border-top: 2px solid #000;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #fff;
+  border-radius: 50px;
+}
+.introWrapper .face .eyeBrows {
+  position: relative;
+  display: flex;
+  top: -5px;
+  width: 295px;
+  height: 20px;
+  justify-content: space-between;
+}
+.introWrapper .face .eyeBrows .eyeBrow {
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+  transition: 0.5s;
+  border-radius: 50px;
+  border-top: 3px solid #000;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.introWrapper .face .eyeBrows .eyeBrow.left {
+  -webkit-transform: rotate(-22deg);
+}
+.introWrapper .face .eyeBrows .eyeBrow.right {
+  -webkit-transform: rotate(22deg);
+}
+.introWrapper .face .eyes {
+  position: relative;
+  display: flex;
+}
+.introWrapper .face .eyes .eye {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  display: block;
+  background: #fff;
+  margin: 0 8px;
+  border-radius: 50%;
+  border: 16px solid #000;
+}
+.introWrapper .face .eyes .eye:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+}
+.mobileTopNavWrapper {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  background: #fbf4eb;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.5s;
+}
+.mobileTopNavWrapper .topNavContent {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 500px) {
+  .mobileTopNavWrapper .topNavContent {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .mobileTopNavWrapper .topNavContent {
+    max-width: 355px;
+  }
+}
+.mobileTopNavWrapper .topNavContent .topNavCloseBtn {
+  position: absolute;
+  right: 30px;
+  top: 63px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .mobileTopNavWrapper .topNavContent .topNavCloseBtn {
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .mobileTopNavWrapper .topNavContent .topNavCloseBtn {
+    top: 28px;
+  }
+}
+.mobileTopNavWrapper .topNavContent .topNavCloseBtn:before,
+.mobileTopNavWrapper .topNavContent .topNavCloseBtn:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background: #000;
+  transition: 0.5s;
+}
+.mobileTopNavWrapper .topNavContent .topNavCloseBtn:before {
+  transform: rotate(45deg);
+}
+.mobileTopNavWrapper .topNavContent .topNavCloseBtn:after {
+  transform: rotate(-45deg);
+}
+.mobileTopNavWrapper .topNavContent ul {
+  padding-top: 220px;
+}
+@media only screen and (max-width: 375px) {
+  .mobileTopNavWrapper .topNavContent ul {
+    padding-top: 150px;
+  }
+}
+.mobileTopNavWrapper .topNavContent ul li {
+  font-size: 50px;
+}
+.contactPopupWrapper {
+  position: absolute;
+  top: 0;
+  background: #fbf4eb;
+  width: 100%;
+  height: 780px;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 1390px) {
+  .contactPopupWrapper {
+    height: 635px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contactPopupWrapper {
+    height: 527px;
+  }
+}
+.contactPopupWrapper .contactPopup {
+  position: relative;
+  max-width: 1350px;
+  margin: 45px auto 0;
+}
+@media only screen and (max-width: 1390px) {
+  .contactPopupWrapper .contactPopup {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contactPopupWrapper .contactPopup {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 170px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contactPopupWrapper .contactPopup {
+    max-width: 375px;
+    padding-top: 150px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contactPopupWrapper .contactPopup {
+    max-width: 355px;
+    margin: 20px auto 0;
+    padding-top: 150px;
+  }
+}
+.contactPopupWrapper .contactPopup .closeBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (max-width: 1390px) {
+  .contactPopupWrapper .contactPopup .closeBtn {
+    top: 64px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contactPopupWrapper .contactPopup .closeBtn {
+    right: -2px;
+    top: 63px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contactPopupWrapper .contactPopup .closeBtn {
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contactPopupWrapper .contactPopup .closeBtn {
+    top: 8px;
+  }
+}
+.contactPopupWrapper .contactPopup .closeBtn:before,
+.contactPopupWrapper .contactPopup .closeBtn:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background: #000;
+  transition: 0.5s;
+}
+.contactPopupWrapper .contactPopup .closeBtn:before {
+  transform: rotate(45deg);
+}
+.contactPopupWrapper .contactPopup .closeBtn:after {
+  transform: rotate(-45deg);
+}
+.contactPopupWrapper .contactPopup .contactPopupContent {
+  padding-top: 245px;
+  padding-left: 470px;
+  background: url('images/contact/contact_drawing.png') no-repeat;
+  background-position: 15% 100%;
+}
+@media only screen and (max-width: 1390px) {
+  .contactPopupWrapper .contactPopup .contactPopupContent {
+    padding-top: 170px;
+    padding-left: 286px;
+    background-position: 0% 100%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contactPopupWrapper .contactPopup .contactPopupContent {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 245px;
+    background-size: 180px 150px;
+    background-position: 50% 64%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contactPopupWrapper .contactPopup .contactPopupContent {
+    background-position: 50% 72%;
+  }
+}
+.contactPopupWrapper .contactPopup .contactPopupContent p {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.3em;
+}
+@media only screen and (max-width: 960px) {
+  .contactPopupWrapper .contactPopup .contactPopupContent p {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contactPopupWrapper .contactPopup .contactPopupContent p {
+    font-size: 26px;
+  }
+}
+.contactPopupWrapper .contactPopup .contactPopupContent p.email {
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 3px solid #000;
+}
+.contactPopupWrapper .contactPopup .contactPopupContent #emailCopyText {
+  position: absolute;
+  display: none;
+  background: #000;
+  padding: 3px 8px;
+  color: #fff;
+}
+.wrapper {
+  position: relative;
+  max-width: 1350px;
+  margin: 45px auto 0;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper {
+    max-width: 960px;
+    margin: 90px auto 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper {
+    max-width: 500px;
+    margin: 53px auto 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 375px;
+    margin: 50px auto 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    max-width: 355px;
+    margin: 19px auto 0;
+  }
+}
+.wrapper .headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .headerWrapper .logoWrapper {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1em;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .headerWrapper .logoWrapper {
+    font-size: 20px;
+  }
+}
+.wrapper .headerWrapper .logoWrapper div {
+  cursor: pointer;
+}
+.wrapper .headerWrapper .topNavWrapper {
+  display: block;
+}
+.wrapper .headerWrapper .topNavWrapper .topNav li {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1em;
+  margin-left: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .headerWrapper .topNavWrapper {
+    display: none;
+  }
+}
+.wrapper .headerWrapper .topNavBtn {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .headerWrapper .topNavBtn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 3px;
+    background: #000;
+  }
+  .wrapper .headerWrapper .topNavBtn:before,
+  .wrapper .headerWrapper .topNavBtn:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 3px;
+    background: #000;
+  }
+  .wrapper .headerWrapper .topNavBtn:before {
+    top: -7px;
+  }
+  .wrapper .headerWrapper .topNavBtn:after {
+    top: 7px;
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper {
+  position: relative;
+  padding-top: 286px;
+  padding-bottom: 540px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper {
+    padding-top: 160px;
+    padding-bottom: 240px;
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper p {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.1em;
+  position: absolute;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .mainCopyWrapper p {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .mainCopyWrapper p {
+    font-size: 23px;
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper p.text1 {
+  transform: translate(0px, 60px);
+}
+.wrapper .contentWrapper .mainCopyWrapper p.text1:before {
+  content: '';
+  display: block;
+  background: pink;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text1 {
+    transform: translate(0px, 35px);
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper p.text2 {
+  transform: translate(0px, 130px);
+  z-index: 1;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text2 {
+    transform: translate(0px, 70px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text2 {
+    transform: translate(0px, 64px);
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper p.text3 {
+  transform: translate(0px, 180px);
+  z-index: 2;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text3 {
+    transform: translate(0px, 105px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text3 {
+    transform: translate(0px, 90px);
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper p.text1Box,
+.wrapper .contentWrapper .mainCopyWrapper p.text2Box,
+.wrapper .contentWrapper .mainCopyWrapper p.text3Box {
+  background: #fff;
+  width: 100%;
+  display: block;
+  height: 66px;
+  z-index: 1;
+  top: 352px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text1Box,
+  .wrapper .contentWrapper .mainCopyWrapper p.text2Box,
+  .wrapper .contentWrapper .mainCopyWrapper p.text3Box {
+    height: 33px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text1Box {
+    top: 196px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text1Box {
+    top: 193px;
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper p.text2Box {
+  top: 418px;
+  z-index: 2;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text2Box {
+    top: 228px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text2Box {
+    top: 224px;
+  }
+}
+.wrapper .contentWrapper .mainCopyWrapper p.text3Box {
+  top: 470px;
+  z-index: 3;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text3Box {
+    top: 260px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .mainCopyWrapper p.text3Box {
+    top: 247px;
+  }
+}
+.wrapper .contentWrapper h2 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1em;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper h2 {
+    font-weight: 500;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper h2 {
+    font-size: 24px;
+  }
+}
+.wrapper .contentWrapper .exprienceWrapper,
+.wrapper .contentWrapper .educationWrapper {
+  padding-bottom: 135px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .exprienceWrapper,
+  .wrapper .contentWrapper .educationWrapper {
+    padding-bottom: 65px;
+  }
+}
+.wrapper .contentWrapper .exprienceWrapper ul li,
+.wrapper .contentWrapper .educationWrapper ul li {
+  padding-top: 45px;
+  font-weight: 400;
+  font-size: 32px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .exprienceWrapper ul li,
+  .wrapper .contentWrapper .educationWrapper ul li {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+}
+.wrapper .contentWrapper .exprienceWrapper ul li p,
+.wrapper .contentWrapper .educationWrapper ul li p {
+  line-height: 1.35em;
+}
+.wrapper .contentWrapper .skillsWrapper p {
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.7em;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .skillsWrapper p {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+}
+.wrapper .contentWrapper .aboutGreetingWrapper {
+  padding-top: 205px;
+  padding-bottom: 400px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .aboutGreetingWrapper {
+    padding-top: 92px;
+    padding-bottom: 245px;
+  }
+}
+.wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent {
+  background: url(images/about/about_drawing.jpg) no-repeat;
+  background-position: 75% 100%;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent {
+    background-position: 100% 100%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent {
+    background-position: 100% 100%;
+    padding-bottom: 230px;
+    background-position: 50% 85%;
+    background-size: 85px 137px;
+    position: relative;
+  }
+}
+.wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent p {
+  max-width: 665px;
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 60px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+}
+.wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent a {
+  font-weight: 600;
+  font-size: 40px;
+  background: #fff;
+  border-bottom: 3px solid #000;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent a {
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    left: -21%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .aboutGreetingWrapper .aboutGreetingContent a {
+    left: -27%;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper {
+  padding-top: 225px;
+  padding-bottom: 400px;
+}
+@media only screen and (max-width: 1440px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper {
+    padding-top: 125px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper {
+    padding-top: 80px;
+    padding-bottom: 230px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper {
+    padding-top: 68px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper {
+    padding-top: 55px;
+    padding-bottom: 160px;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li {
+  display: flex;
+  padding-bottom: 240px;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li {
+    padding-bottom: 170px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li {
+    display: block;
+    padding-bottom: 115px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li {
+    padding-bottom: 55px;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .image {
+  display: inline-block;
+  width: 834px;
+  height: 637px;
+  margin-right: 122px;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .image {
+    margin-right: 60px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .image {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .image {
+    margin: 0 auto;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .image img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper {
+  display: inline-block;
+  max-width: 400px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper {
+    max-width: 100%;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.2em;
+  padding-bottom: 27px;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .title {
+    font-size: 26px;
+    padding-top: 55px;
+    padding-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .title {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .title {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .title {
+    padding-top: 40px;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .description {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.4em;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .description {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .description {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .portfolioBlock li .textWrapper .description {
+    font-size: 18px;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .personalProjectWrapper {
+  padding-top: 176px;
+  font-size: 36px;
+  text-align: center;
+  background: url('images/work/personal_work_drawing.jpg') no-repeat;
+  padding-bottom: 212px;
+  background-position: 50% 100%;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .personalProjectWrapper {
+    padding-top: 95px;
+    font-size: 20px;
+    background-position: 50% 96%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .personalProjectWrapper {
+    font-size: 18px;
+  }
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .personalProjectWrapper p {
+  line-height: 1em;
+}
+.wrapper .contentWrapper .portfolioBlockWrapper .personalProjectWrapper a {
+  background: #fff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid #000;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .portfolioBlockWrapper .personalProjectWrapper a {
+    border-bottom: 2px solid #000;
+  }
+}
+.footerWrapper {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+.footerWrapper.intro {
+  position: absolute;
+}

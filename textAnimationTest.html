@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <style>
+        .wrapper {
+            position: relative;
+        }
+        p {
+            position: absolute;
+            font-size: 60px;
+            line-height: 1em;
+            margin: 0;
+        }
+        .text1 {
+            top: -60px;
+            opacity: 0;
+        }
+        .text2 {
+            top: 0px;
+            opacity: 0;
+        }
+        .text3 {
+            top: 60px;
+            opacity: 0;
+        }
+    </style>
+    <div class="wrapper">
+        <p class="text1">Hi, my name is Jiwoo.</p>
+        <p class="text2">I'm a Frontend Web Developer</p>
+        <p class="text3">from Korea based in London.</p>
+    </div>
+    <script>
+        gsap.to(".text1", {y: 60, opacity: 1, ease: "power.out", duration: 1});
+        gsap.to(".text2", {y: 60, opacity: 1, ease: "power.out", duration: 1, delay: .5});
+        gsap.to(".text3", {y: 60, opacity: 1, ease: "power.out", duration: 1, delay: 1});
+    </script>
+</body>
+</html>

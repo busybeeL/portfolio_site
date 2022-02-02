@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <script>
+        var w = window.innerWidth;
+        var tablet = 1390;
+        var smallTablet = 960;
+        var mobile = 500;
+        var smallMobile = 375;
+        if(w <= 1390 && w >= 960){
+            console.log('tablet', w)
+        }else if (w <= 960 && w>= 500){
+            console.log('smallTablet', w)
+        }else if (w <= 500 && w> 375){
+            console.log('mobile', w)
+        }else if (w >= 375){
+            console.log('smallMobile', w)
+        }else {
+            console.log('desktop', w)
+        }
+    </script>
+</body>
+</html>
