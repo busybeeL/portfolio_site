@@ -79,6 +79,36 @@
                 window.location.href = "./index.html";
             }
         }
+                /* contact popup */
+                const contactPopup = document.getElementById('contact')
+        function openContact(){
+            contactPopup.style.visibility = 'visible';
+            contactPopup.style.opacity = 1;
+        }
+        function closeContact(){
+            contactPopup.style.visibility = 'hidden';
+            contactPopup.style.opacity = 0;
+
+        }
+        /* copy email address */
+        const eMail = document.querySelector('.email');
+        const eMailCopyText = document.getElementById('emailCopyText');
+        const onMouseMove = (e) => {
+            emailCopyText.style.left = e.pageX + 'px';
+            emailCopyText.style.top = e.pageY + 'px';
+        }
+        eMail.addEventListener('mousemove', onMouseMove);
+        eMail.addEventListener('mouseover', function(){
+            eMailCopyText.style.display = 'block';
+        })
+        eMail.addEventListener('mouseout', function(){
+            eMailCopyText.style.display = 'none';
+            eMailCopyText.innerHTML = "Click here to copy Jiwoo's email address :)!";
+        })
+        function clipBoard(){
+            navigator.clipboard.writeText(eMail.textContent);
+            eMailCopyText.innerHTML = 'Copied!';
+        }
     </script>
     <script>
         document.querySelector('body')
