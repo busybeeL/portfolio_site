@@ -191,19 +191,20 @@
     </div>
     <script>
         /* refresh page on browser resize */
+        // window.addEventListener('resize', function(){
+        //     'use strict';
+        //     window.location.reload();
+        // })
+        let originalWidth = window.innerWidth;
+
         window.addEventListener('resize', function(){
             'use strict';
-            window.location.reload();
+            if(originalWidth != window.innerWidth) {
+                window.location.reload();
+            }
         })
 
 
-        window.addEventListener('touchstart', function(e) {
-            console.log('touchstart');
-
-            e.preventDefault();
-            e.stopImmediatePropagation();
-            e.stopPropagation();
-        });
 
 
         /* logo click */
