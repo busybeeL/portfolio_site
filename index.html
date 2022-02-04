@@ -203,9 +203,9 @@
             e.preventDefault();
             e.stopImmediatePropagation();
             e.stopPropagation();
-        });
+        }, { passive: false });
 
-        
+
         /* logo click */
         function logoClick(){
             console.log(window.innerWidth)
