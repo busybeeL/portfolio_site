@@ -190,6 +190,13 @@
         ⓒ Copyright 2022 by JIWOO KIM
     </div>
     <script>
+        document.addEventListener('touchstart', function(e) {
+            console.log('touchstart');
+
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            e.stopPropagation();
+        });
         /* refresh page on browser resize */
         window.addEventListener('resize', function(){
             'use strict';
