@@ -5,6 +5,9 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  overscroll-behavior: contain;
+}
 li {
   list-style-type: none;
 }
