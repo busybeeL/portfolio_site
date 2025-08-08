@@ -717,6 +717,147 @@ a {
                 }
             }
         }
+        .beyondWorkBlockWrapper {
+            padding-top: 225px;
+            padding-bottom: 400px;
+            @media only screen and (max-width: 1440px) {
+                padding-top: 125px;
+            }
+            @media only screen and (max-width: 960px) {
+                padding-top: 80px;
+                padding-bottom: 230px;
+            }
+            @media only screen and (max-width: 500px) {
+                padding-top: 68px;
+            }
+            @media only screen and (max-width: 375px) {
+                padding-top: 55px;
+                padding-bottom: 160px;
+            }
+            .beyondWorkBlock {
+                li {
+                    display: flex;
+                    padding-bottom: 240px;
+                    .firstImage{
+                        margin-right: 122px;
+                    }
+                    @media only screen and (max-width: 1390px) {
+                        padding-bottom: 170px;
+                    }
+                    @media only screen and (max-width: 960px) {
+                        display: block;
+                        padding-bottom: 115px;
+                    }
+                    @media only screen and (max-width: 500px) {
+                        padding-bottom: 100px;
+                    }
+                    @media only screen and (max-width: 375px) {
+                        padding-bottom: 55px;
+                    }
+                    .image {
+                        display: inline-block;
+                        width: 834px;
+                        height: 637px;
+                        @media only screen and (max-width: 1390px) {
+                            height: auto;
+                        }
+                        @media only screen and (max-width: 960px) {
+                            width: 100%;
+                        }
+                        @media only screen and (max-width: 500px) {
+                            margin: 0 auto;
+                        }
+                        img {
+                            display: inline-block;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .textWrapper {
+                        display: inline-block;
+                        max-width: 400px;
+                        @media only screen and (max-width: 960px) {
+                            max-width: 100%;
+                        }
+                        .title {
+                            font-weight: 400;
+                            font-size: 34px;
+                            line-height: 1.2em;
+                            padding-bottom: 27px;
+                            @media only screen and (max-width: 1390px) {
+                                font-size: 30px;   
+                            }
+                            @media only screen and (max-width: 960px) {
+                                font-size: 26px;
+                                padding-top: 55px;
+                                padding-bottom: 22px;
+                            }
+                            @media only screen and (max-width: 500px) {
+                                padding-bottom: 20px;
+                            }
+                            @media only screen and (max-width: 500px) {
+                                font-size: 26px;   
+                            }
+                            @media only screen and (max-width: 375px) {
+                                padding-top: 40px;
+                            }
+                        }
+                        .description {
+                            font-weight: 300;
+                            font-size: 25px;
+                            line-height: 1.4em;
+                            @media only screen and (max-width: 1390px) {
+                                font-size: 20px;
+                            }
+                            @media only screen and (max-width: 960px) {
+                                font-size: 22px;
+                            }
+                            @media only screen and (max-width: 500px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .secondTextWrapper {
+                        margin-right: 122px;
+                          @media only screen and (max-width: 960px) {
+                            margin-right: 0;
+                          }
+                          @media only screen and (max-width: 500px) {
+                                padding-bottom: 55px;
+                          }
+                    }
+                }
+            }
+            .personalProjectWrapper {
+                padding-top: 176px;
+                font-size: 36px;
+                text-align: center;
+                background: url('./images/work/personal_work_drawing.jpg')no-repeat;
+                padding-bottom: 212px;
+                background-position: 50% 100%;
+                @media only screen and (max-width: 1390px) {
+                    padding-top: 95px;
+                    font-size: 20px;
+                    background-position: 50% 96%;
+                }
+                @media only screen and (max-width: 375px) {
+                    font-size: 18px;
+                }
+                p {
+                    line-height: 1em;
+                }
+                a {
+                    background: #fff;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    border-bottom: 3px solid #000;
+                    @media only screen and (max-width: 960px) {
+                        border-bottom: 2px solid #000;
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIWOO KIM - Front End Web Developer</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="contact" class="contactPopupWrapper">
+      <div class="contactPopup">
+        <div onClick="closeContact()" class="closeBtn"></div>
+        <div class="contactPopupContent">
+          <p>JIWOO KIM</p>
+          <p class="email" onClick="clipBoard()">jiwoooookim@gmail.com</p>
+          <span id="emailCopyText"
+            >Click here to copy Jiwoo's email address :)</span
+          >
+          <p>
+            <a href="https://www.linkedin.com/in/jiwoooookim/" target="_blank"
+              >LinkedIn,
+            </a>
+            <a href="https://github.com/busybeeL" target="_blank">Github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="mobileTopNav" class="mobileTopNavWrapper">
+      <div class="topNavContent">
+        <div onClick="mobileNavClose()" class="topNavCloseBtn"></div>
+        <ul>
+          <li>
+            <a href="02_about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="03_work.html">WORK</a>
+          </li>
+          <li>
+            <a href="04_beyond_work.html">BEYOND WORK</a>
+          </li>
+          <li>
+            <a onClick="openContact()">CONTACT</a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1FUlCPeN9T0lYfz2Su1JCo_C_1GAYnieg/view?usp=sharing"
+              target="_balnk"
+              >DOWNLOAD CV</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="headerWrapper">
+        <div class="logoWrapper">
+          <a onClick="logoClick()">JIWOO KIM</a>
+        </div>
+        <div class="topNavWrapper">
+          <ul class="topNav">
+            <li>
+              <a href="02_about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="03_work.html">WORK</a>
+            </li>
+            <li>
+              <a href="04_beyond_work.html">BEYOND WORK</a>
+            </li>
+            <li>
+              <a onClick="openContact()">CONTACT</a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1FUlCPeN9T0lYfz2Su1JCo_C_1GAYnieg/view?usp=sharing"
+                target="_balnk"
+                >DOWNLOAD CV</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div onClick="mobileNavOpen()" class="topNavBtn"></div>
+      </div>
+      <div class="contentWrapper">
+        <div class="beyondWorkBlockWrapper">
+          <ul class="beyondWorkBlock">
+            <li>
+              <div class="image firstImage">
+                <a href="https://podcasts.apple.com/au/podcast/savage-sisters/id1676316799" target="_blank">
+                  <img
+                    src="./src/images/beyond_work/savage_sisters.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="textWrapper">
+                <p class="title">
+                  2023 - Present<br />
+                  Savage Sisters
+                </p>
+                <p class="description">
+                  Savage Sisters is my podcast where I interview Korean women
+                  working in the tech industry. It began from my curiosity about
+                  how other Korean women in tech work, grow, and live as
+                  professionals. So far, I’ve produced ten episodes—with many
+                  more to come. You can find it on any podcast app, though
+                  you’ll need to understand Korean to fully enjoy the
+                  conversations.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="textWrapper secondTextWrapper">
+                <p class="title">
+                  2022 - Present<br />
+                  WWTT
+                </p>
+                <p class="description">
+                  WWTT stands for Wednesday Women Tech Talk. I started this
+                  study group right after COVID hit, as a way to share tech
+                  knowledge and stay connected with other Korean women working
+                  in the industry. We meet online every Wednesday evening, and
+                  each week one member prepares a presentation on a topic of
+                  their choice, which we discuss together during the session.
+                  The group is open to any Korean women living in the UK—no
+                  technical background required.
+                </p>
+              </div>
+              <div class="image">
+                <a>
+                  <img src="./src/images/beyond_work/wwtt.jpg" alt="" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footerWrapper">ⓒ Copyright 2025 by JIWOO KIM</div>
+    <script>
+      /* logo click */
+      function logoClick() {
+        if (window.innerWidth < 960) {
+          window.location.href = "./index.html";
+        } else {
+          window.location.href = "./00_intro.html";
+        }
+      }
+      /* mobile top nav */
+      const mobileNav = document.getElementById("mobileTopNav");
+      function mobileNavOpen() {
+        mobileNav.style.visibility = "visible";
+        mobileNav.style.opacity = 1;
+      }
+      function mobileNavClose() {
+        mobileNav.style.visibility = "hidden";
+        mobileNav.style.opacity = 0;
+      }
+      /* contact popup */
+      const contactPopup = document.getElementById("contact");
+      function openContact() {
+        contactPopup.style.visibility = "visible";
+        contactPopup.style.opacity = 1;
+      }
+      function closeContact() {
+        contactPopup.style.visibility = "hidden";
+        contactPopup.style.opacity = 0;
+      }
+      /* copy email address */
+      const eMail = document.querySelector(".email");
+      const eMailCopyText = document.getElementById("emailCopyText");
+      const onMouseMove = (e) => {
+        emailCopyText.style.left = e.pageX + "px";
+        emailCopyText.style.top = e.pageY + "px";
+      };
+      eMail.addEventListener("mousemove", onMouseMove);
+      eMail.addEventListener("mouseover", function () {
+        eMailCopyText.style.display = "block";
+      });
+      eMail.addEventListener("mouseout", function () {
+        eMailCopyText.style.display = "none";
+        eMailCopyText.innerHTML =
+          "Click here to copy Jiwoo's email address :)!";
+      });
+      function clipBoard() {
+        navigator.clipboard.writeText(eMail.textContent);
+        eMailCopyText.innerHTML = "Copied!";
+      }
+    </script>
+  </body>
+</html>

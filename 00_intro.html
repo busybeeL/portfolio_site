@@ -1,143 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JIWOO KIM - Front End Web Developer</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIWOO KIM - Front End Developer</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="contact" class="contactPopupWrapper">
-        <div class="contactPopup">
-            <div onClick="closeContact()" class="closeBtn">
-            </div>
-            <div class="contactPopupContent">
-                <p>JIWOO KIM</p>
-                <p class="email" onClick="clipBoard()">jiwoooookim@gmail.com</p>
-                <span id="emailCopyText">Click here to copy Jiwoo's email address :)</span>
-                <p>
-                    <a href="https://www.linkedin.com/in/jiwoooookim/" target="_blank">LinkedIn, </a> 
-                    <a href="https://github.com/busybeeL" target="_blank">Github</a>
-                </p>
-            </div>
+      <div class="contactPopup">
+        <div onClick="closeContact()" class="closeBtn"></div>
+        <div class="contactPopupContent">
+          <p>JIWOO KIM</p>
+          <p class="email" onClick="clipBoard()">jiwoooookim@gmail.com</p>
+          <span id="emailCopyText"
+            >Click here to copy Jiwoo's email address :)</span
+          >
+          <p>
+            <a href="https://www.linkedin.com/in/jiwoooookim/" target="_blank"
+              >LinkedIn,
+            </a>
+            <a href="https://github.com/busybeeL" target="_blank">Github</a>
+          </p>
         </div>
+      </div>
     </div>
     <div class="wrapper">
-        <div class="headerWrapper">
-            <div class="logoWrapper">
-                <a onClick="logoClick()">JIWOO KIM</a>
-            </div>
-            <div class="topNavWrapper">
-                <ul class="topNav">
-                    <li>
-                        <a href="02_about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="03_work.html">WORK</a>
-                    </li>
-                    <li>
-                        <a onClick="openContact()">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="headerWrapper">
+        <div class="logoWrapper">
+          <a onClick="logoClick()">JIWOO KIM</a>
         </div>
-  
-        <div class="introWrapper">
-            <div class="jiw">JIW</div>
-            <div class="face">
-              <div class="eyeBrows">
-                <div class="eyeBrow left"></div>
-                <div class="eyeBrow right"></div>
-              </div>
-              <div class="eyes">
-                <div class="eye"></div>
-                <div class="eye right"></div>
-              </div>
-            </div>
+        <div class="topNavWrapper">
+          <ul class="topNav">
+            <li>
+              <a href="02_about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="03_work.html">WORK</a>
+            </li>
+            <li>
+              <a href="04_beyond_work.html">BEYOND WORK</a>
+            </li>
+            <li>
+              <a onClick="openContact()">CONTACT</a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1FUlCPeN9T0lYfz2Su1JCo_C_1GAYnieg/view?usp=sharing"
+                target="_balnk"
+                >DOWNLOAD CV</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="introWrapper">
+        <div class="jiw">JIW</div>
+        <div class="face">
+          <div class="eyeBrows">
+            <div class="eyeBrow left"></div>
+            <div class="eyeBrow right"></div>
           </div>
-
+          <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye right"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footerWrapper intro">
-        ⓒ Copyright 2022 by JIWOO KIM
-    </div>
+    <div class="footerWrapper intro">ⓒ Copyright 2025 by JIWOO KIM</div>
     <script>
-        window.addEventListener('resize', function(){
-            'use strict';
-            if(window.innerWidth < 960) {
-                window.location.href = "./index.html";
-            } else {
-                window.location.href = "./00_intro.html";
-            }
-        })
-        /* logo click */
-        function logoClick(){
-            if(window.innerWidth < 960) {
-                window.location.href = "./index.html";
-            }
+      window.addEventListener("resize", function () {
+        "use strict";
+        if (window.innerWidth < 960) {
+          window.location.href = "./index.html";
+        } else {
+          window.location.href = "./00_intro.html";
         }
-                /* contact popup */
-                const contactPopup = document.getElementById('contact')
-        function openContact(){
-            contactPopup.style.visibility = 'visible';
-            contactPopup.style.opacity = 1;
+      });
+      /* logo click */
+      function logoClick() {
+        if (window.innerWidth < 960) {
+          window.location.href = "./index.html";
         }
-        function closeContact(){
-            contactPopup.style.visibility = 'hidden';
-            contactPopup.style.opacity = 0;
-
-        }
-        /* copy email address */
-        const eMail = document.querySelector('.email');
-        const eMailCopyText = document.getElementById('emailCopyText');
-        const onMouseMove = (e) => {
-            emailCopyText.style.left = e.pageX + 'px';
-            emailCopyText.style.top = e.pageY + 'px';
-        }
-        eMail.addEventListener('mousemove', onMouseMove);
-        eMail.addEventListener('mouseover', function(){
-            eMailCopyText.style.display = 'block';
-        })
-        eMail.addEventListener('mouseout', function(){
-            eMailCopyText.style.display = 'none';
-            eMailCopyText.innerHTML = "Click here to copy Jiwoo's email address :)!";
-        })
-        function clipBoard(){
-            navigator.clipboard.writeText(eMail.textContent);
-            eMailCopyText.innerHTML = 'Copied!';
-        }
+      }
+      /* contact popup */
+      const contactPopup = document.getElementById("contact");
+      function openContact() {
+        contactPopup.style.visibility = "visible";
+        contactPopup.style.opacity = 1;
+      }
+      function closeContact() {
+        contactPopup.style.visibility = "hidden";
+        contactPopup.style.opacity = 0;
+      }
+      /* copy email address */
+      const eMail = document.querySelector(".email");
+      const eMailCopyText = document.getElementById("emailCopyText");
+      const onMouseMove = (e) => {
+        emailCopyText.style.left = e.pageX + "px";
+        emailCopyText.style.top = e.pageY + "px";
+      };
+      eMail.addEventListener("mousemove", onMouseMove);
+      eMail.addEventListener("mouseover", function () {
+        eMailCopyText.style.display = "block";
+      });
+      eMail.addEventListener("mouseout", function () {
+        eMailCopyText.style.display = "none";
+        eMailCopyText.innerHTML =
+          "Click here to copy Jiwoo's email address :)!";
+      });
+      function clipBoard() {
+        navigator.clipboard.writeText(eMail.textContent);
+        eMailCopyText.innerHTML = "Copied!";
+      }
     </script>
     <script>
-        document.querySelector('body')
-        .addEventListener('mousemove', eyeball);
-        function eyeball(){
-            var eye = document.querySelectorAll('.eye');
-            var eyeRight = document.querySelector('.eye.right');
+      document.querySelector("body").addEventListener("mousemove", eyeball);
+      function eyeball() {
+        var eye = document.querySelectorAll(".eye");
+        var eyeRight = document.querySelector(".eye.right");
 
-            eye.forEach(function(eye){
-            let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-            let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-            let radian = Math.atan2(event.pageX - x, event.pageY - y);
-            let rot = (radian * (180 / Math.PI) * -1) + 270;
-            eye.style.transform = 'rotate(' + rot + 'deg)';
-            })
+        eye.forEach(function (eye) {
+          let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+          let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+          let radian = Math.atan2(event.pageX - x, event.pageY - y);
+          let rot = radian * (180 / Math.PI) * -1 + 270;
+          eye.style.transform = "rotate(" + rot + "deg)";
+        });
 
-            var eyeBrow = document.querySelectorAll('.eyeBrow');
-            var leftBrow = eyeBrow[0];
-            var rightBrow = eyeBrow[1];
-            var positionOfRightEye = eyeRight.getBoundingClientRect().left + eyeRight.clientWidth;
-            
-            if (event.pageX > positionOfRightEye) {
-            leftBrow.style.marginTop = '16px';
-            rightBrow.style.marginTop = '0';
-            } else {
-            leftBrow.style.marginTop = '16px';
-            rightBrow.style.marginTop = '16px';
-            }
+        var eyeBrow = document.querySelectorAll(".eyeBrow");
+        var leftBrow = eyeBrow[0];
+        var rightBrow = eyeBrow[1];
+        var positionOfRightEye =
+          eyeRight.getBoundingClientRect().left + eyeRight.clientWidth;
+
+        if (event.pageX > positionOfRightEye) {
+          leftBrow.style.marginTop = "16px";
+          rightBrow.style.marginTop = "0";
+        } else {
+          leftBrow.style.marginTop = "16px";
+          rightBrow.style.marginTop = "16px";
         }
-      </script>
-</body>
+      }
+    </script>
+  </body>
 </html>
