@@ -870,6 +870,195 @@ a:visited {
     border-bottom: 2px solid #000;
   }
 }
+.wrapper .contentWrapper .beyondWorkBlockWrapper {
+  padding-top: 225px;
+  padding-bottom: 400px;
+}
+@media only screen and (max-width: 1440px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper {
+    padding-top: 125px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper {
+    padding-top: 80px;
+    padding-bottom: 230px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper {
+    padding-top: 68px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper {
+    padding-top: 55px;
+    padding-bottom: 160px;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li {
+  display: flex;
+  padding-bottom: 240px;
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .firstImage {
+  margin-right: 122px;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li {
+    padding-bottom: 170px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li {
+    display: block;
+    padding-bottom: 115px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li {
+    padding-bottom: 55px;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .image {
+  display: inline-block;
+  width: 834px;
+  height: 637px;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .image {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .image {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .image {
+    margin: 0 auto;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .image img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper {
+  display: inline-block;
+  max-width: 400px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper {
+    max-width: 100%;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.2em;
+  padding-bottom: 27px;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .title {
+    font-size: 26px;
+    padding-top: 55px;
+    padding-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .title {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .title {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .title {
+    padding-top: 40px;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .description {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.4em;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .description {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .description {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .textWrapper .description {
+    font-size: 18px;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .secondTextWrapper {
+  margin-right: 122px;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .secondTextWrapper {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .beyondWorkBlock li .secondTextWrapper {
+    padding-bottom: 55px;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .personalProjectWrapper {
+  padding-top: 176px;
+  font-size: 36px;
+  text-align: center;
+  background: url('images/work/personal_work_drawing.jpg') no-repeat;
+  padding-bottom: 212px;
+  background-position: 50% 100%;
+}
+@media only screen and (max-width: 1390px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .personalProjectWrapper {
+    padding-top: 95px;
+    font-size: 20px;
+    background-position: 50% 96%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .personalProjectWrapper {
+    font-size: 18px;
+  }
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .personalProjectWrapper p {
+  line-height: 1em;
+}
+.wrapper .contentWrapper .beyondWorkBlockWrapper .personalProjectWrapper a {
+  background: #fff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid #000;
+}
+@media only screen and (max-width: 960px) {
+  .wrapper .contentWrapper .beyondWorkBlockWrapper .personalProjectWrapper a {
+    border-bottom: 2px solid #000;
+  }
+}
 .footerWrapper {
   position: relative;
   width: 100%;

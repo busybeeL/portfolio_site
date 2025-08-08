@@ -1,296 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JIWOO KIM - Front End Web Developer</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="contact" class="contactPopupWrapper">
-        <div class="contactPopup">
-            <div onClick="closeContact()" class="closeBtn">
-            </div>
-            <div class="contactPopupContent">
-                <p>JIWOO KIM</p>
-                <p class="email" onClick="clipBoard()">jiwoooookim@gmail.com</p>
-                <span id="emailCopyText">Click here to copy Jiwoo's email address :)</span>
-                <p>
-                    <a href="https://www.linkedin.com/in/jiwoooookim/" target="_blank">LinkedIn, </a> 
-                    <a href="https://github.com/busybeeL" target="_blank">Github</a>
-                </p>
-            </div>
+      <div class="contactPopup">
+        <div onClick="closeContact()" class="closeBtn"></div>
+        <div class="contactPopupContent">
+          <p>JIWOO KIM</p>
+          <p class="email" onClick="clipBoard()">jiwoooookim@gmail.com</p>
+          <span id="emailCopyText"
+            >Click here to copy Jiwoo's email address :)</span
+          >
+          <p>
+            <a href="https://www.linkedin.com/in/jiwoooookim/" target="_blank"
+              >LinkedIn,
+            </a>
+            <a href="https://github.com/busybeeL" target="_blank">Github</a>
+          </p>
         </div>
+      </div>
     </div>
     <div id="mobileTopNav" class="mobileTopNavWrapper">
-        <div class="topNavContent">
-            <div onClick="mobileNavClose()" class="topNavCloseBtn"></div>
-            <ul>
-                <li>
-                    <a href="02_about.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="03_work.html">WORK</a>
-                </li>
-                <li>
-                    <a onClick="openContact()">CONTACT</a>
-                </li>
-            </ul>
-        </div>
+      <div class="topNavContent">
+        <div onClick="mobileNavClose()" class="topNavCloseBtn"></div>
+        <ul>
+          <li>
+            <a href="02_about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="03_work.html">WORK</a>
+          </li>
+          <li>
+            <a href="04_beyond_work.html">BEYOND WORK</a>
+          </li>
+          <li>
+            <a onClick="openContact()">CONTACT</a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1FUlCPeN9T0lYfz2Su1JCo_C_1GAYnieg/view?usp=sharing"
+              target="_balnk"
+              >DOWNLOAD CV</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="wrapper">
-        <div class="headerWrapper">
-            <div class="logoWrapper">
-                <a onClick="logoClick()">JIWOO KIM</a>
-            </div>
-            <div class="topNavWrapper">
-                <ul class="topNav">
-                    <li>
-                        <a href="02_about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="03_work.html">WORK</a>
-                    </li>
-                    <li>
-                        <a onClick="openContact()">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <div onClick="mobileNavOpen()" class="topNavBtn">
-            </div>
+      <div class="headerWrapper">
+        <div class="logoWrapper">
+          <a onClick="logoClick()">JIWOO KIM</a>
         </div>
-        <div class="contentWrapper">
-            <div class="mainCopyWrapper">
-                <p class="text1Box"></p>
-                <p class="text1">
-                    Hi, my name is <b>Jiwoo.</b>
-                </p>
-                <p class="text2Box"></p>
-                <p class="text2">
-                    I'm a Frontend Web Developer
-                </p>
-                <p class="text3Box"></p>
-                <p class="text3">
-                    from Korea Based in London.
-                </p>
-            </div>
-            <div class="exprienceWrapper">
-                <h2>Experience</h2>
-                <ul>
-                    <li>
-                        <p>
-                            Volunteer Web Developer at Connect: North Korea
-                        </p>
-                        <p>
-                            Jun 2020 - Dec 2021
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Design Engineer at CODE Worldwide
-                        </p>
-                        <p>
-                            Jan 2019 - Jun 2020
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Interactive Web Developer at GBC group
-                        </p>
-                        <p>
-                            Mar 2018 - Dec 2018
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Freelance Frontend Web Developer atBritcent
-                        </p>
-                        <p>
-                            Jan 2017 - Feb 2017
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Frontend Web Developer at SEEROO
-                        </p>
-                        <p>
-                            Nov 2015 - Jun 2017
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Frontend Web Developer at CC Media Service
-                        </p>
-                        <p>
-                            Oct 2014 - Seb 2015
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="educationWrapper">
-                <h2>Education</h2>
-                <ul>
-                    <li>
-                       <p>
-                            Master's degree in Computer Science
-                       </p> 
-                       <p>
-                            York St John University 2020 - 2022
-                       </p>
-                    </li>
-                    <li>
-                       <p>
-                            Bachelor's degree in Communication Design
-                       </p> 
-                       <p>
-                            Hongik University 2009 - 2012                           
-                       </p>
-                    </li>
-                    <li>
-                       <p>
-                            College degree in Graphic Design
-                       </p> 
-                       <p>
-                            Seoul Institute of Art 2007 - 2009                           
-                       </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="skillsWrapper">
-                <h2>Skills</h2>
-                <p>
-                    HTML / CSS / JavaScript / ReactJS / TypeScript / Python / WordPress / Photoshop /
-                    Illustrator / Sketch / After Effects
-                </p>
-            </div>
-            <div class="aboutGreetingWrapper">
-                <div class="aboutGreetingContent">
-                    <p>
-                        I am very passionate for learning new skills 
-                        (for both programming and life) and love 
-                        sharing my knowledge with people who 
-                        have comon interests. I am currently 
-                        looking for a new job based in the UK so, feel 
-                        free to crop me an e-mail if ou are looking
-                        for a front end developer! 
-                    </p>
-                    <a href="https://drive.google.com/file/d/16J-vPYYHoKwPFe7p_Ur2vYJuWqIoLF4M/view?usp=sharing" target="_balnk">
-                        Download CV
-                    </a>
-                </div>
-            </div>
+        <div class="topNavWrapper">
+          <ul class="topNav">
+            <li>
+              <a href="02_about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="03_work.html">WORK</a>
+            </li>
+            <li>
+              <a href="04_beyond_work.html">BEYOND WORK</a>
+            </li>
+            <li>
+              <a onClick="openContact()">CONTACT</a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1FUlCPeN9T0lYfz2Su1JCo_C_1GAYnieg/view?usp=sharing"
+                target="_balnk"
+                >DOWNLOAD CV</a
+              >
+            </li>
+          </ul>
         </div>
+        <div onClick="mobileNavOpen()" class="topNavBtn"></div>
+      </div>
+      <div class="contentWrapper">
+        <div class="mainCopyWrapper">
+          <p class="text1Box"></p>
+          <p class="text1">Hi, my name is <b>Jiwoo.</b></p>
+          <p class="text2Box"></p>
+          <p class="text2">I'm a Frontend Developer</p>
+          <p class="text3Box"></p>
+          <p class="text3">based in the UK.</p>
+        </div>
+        <div class="exprienceWrapper">
+          <h2>Experience</h2>
+          <ul>
+            <li>
+              <p>Software Engineer at FutureFarm</p>
+              <p>Jun 2022 - present</p>
+            </li>
+            <li>
+              <p>Volunteer Web Developer at Connect: North Korea</p>
+              <p>Jun 2020 - Dec 2021</p>
+            </li>
+            <li>
+              <p>Design Engineer at CODE Worldwide</p>
+              <p>Jan 2019 - Jun 2020</p>
+            </li>
+            <li>
+              <p>Interactive Web Developer at GVC group</p>
+              <p>Mar 2018 - Dec 2018</p>
+            </li>
+          </ul>
+        </div>
+        <div class="educationWrapper">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <p>Master's degree in Computer Science</p>
+              <p>York St John University 2020 - 2022</p>
+            </li>
+            <li>
+              <p>Bachelor's degree in Communication Design</p>
+              <p>Hongik University 2009 - 2012</p>
+            </li>
+            <li>
+              <p>College degree in Graphic Design</p>
+              <p>Seoul Institute of Art 2007 - 2009</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skillsWrapper">
+          <h2>Skills</h2>
+          <p>
+            HTML / CSS / JavaScript / ReactJS / TypeScript / Python / WordPress
+            / Photoshop / Illustrator / Sketch / After Effects
+          </p>
+        </div>
+        <div class="aboutGreetingWrapper">
+          <div class="aboutGreetingContent">
+            <p>
+              I am very passionate for learning new skills (for both programming
+              and life) and love sharing my knowledge with people who have comon
+              interests. I am currently looking for a new job based in the UK
+              so, feel free to crop me an e-mail if you are looking for a front
+              end developer!
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1FUlCPeN9T0lYfz2Su1JCo_C_1GAYnieg/view?usp=sharing"
+              target="_balnk"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footerWrapper">
-        ⓒ Copyright 2022 by JIWOO KIM
-    </div>
+    <div class="footerWrapper">ⓒ Copyright 2025 by JIWOO KIM</div>
     <script>
-        /* refresh page on browser resize */
-        // window.addEventListener('resize', function(){
-        //     'use strict';
-        //     window.location.reload();
-        // })
-        let originalWidth = window.innerWidth;
+      /* refresh page on browser resize */
+      // window.addEventListener('resize', function(){
+      //     'use strict';
+      //     window.location.reload();
+      // })
+      let originalWidth = window.innerWidth;
 
-        window.addEventListener('resize', function(){
-            'use strict';
-            if(originalWidth != window.innerWidth) {
-                window.location.reload();
-            }
-        })
+      window.addEventListener("resize", function () {
+        "use strict";
+        if (originalWidth != window.innerWidth) {
+          window.location.reload();
+        }
+      });
 
-
-
-
-        /* logo click */
-        function logoClick(){
-            console.log(window.innerWidth)
-            if(window.innerWidth < 960) {
-                window.location.href = "./index.html";
-            } else {
-                window.location.href = "./00_intro.html";
-            }
+      /* logo click */
+      function logoClick() {
+        console.log(window.innerWidth);
+        if (window.innerWidth < 960) {
+          window.location.href = "./index.html";
+        } else {
+          window.location.href = "./00_intro.html";
         }
-        /* mobile top nav */
-        const mobileNav = document.getElementById('mobileTopNav');
-        function mobileNavOpen(){
-            mobileNav.style.visibility = 'visible';
-            mobileNav.style.opacity = 1;
-        }
-        function mobileNavClose() {
-            mobileNav.style.visibility = 'hidden';
-            mobileNav.style.opacity = 0;
-        }
-        /* contact popup */
-        const contactPopup = document.getElementById('contact')
-        function openContact(){
-            contactPopup.style.visibility = 'visible';
-            contactPopup.style.opacity = 1;
-        }
-        function closeContact(){
-            contactPopup.style.visibility = 'hidden';
-            contactPopup.style.opacity = 0;
-
-        }
-        /* copy email address */
-        const eMail = document.querySelector('.email');
-        const eMailCopyText = document.getElementById('emailCopyText');
-        const onMouseMove = (e) => {
-            emailCopyText.style.left = e.pageX + 'px';
-            emailCopyText.style.top = e.pageY + 'px';
-        }
-        eMail.addEventListener('mousemove', onMouseMove);
-        eMail.addEventListener('mouseover', function(){
-            eMailCopyText.style.display = 'block';
-        })
-        eMail.addEventListener('mouseout', function(){
-            eMailCopyText.style.display = 'none';
-            eMailCopyText.innerHTML = "Click here to copy Jiwoo's email address :)!";
-        })
-        function clipBoard(){
-            navigator.clipboard.writeText(eMail.textContent);
-            eMailCopyText.innerHTML = 'Copied!';
-        }
+      }
+      /* mobile top nav */
+      const mobileNav = document.getElementById("mobileTopNav");
+      function mobileNavOpen() {
+        mobileNav.style.visibility = "visible";
+        mobileNav.style.opacity = 1;
+      }
+      function mobileNavClose() {
+        mobileNav.style.visibility = "hidden";
+        mobileNav.style.opacity = 0;
+      }
+      /* contact popup */
+      const contactPopup = document.getElementById("contact");
+      function openContact() {
+        contactPopup.style.visibility = "visible";
+        contactPopup.style.opacity = 1;
+      }
+      function closeContact() {
+        contactPopup.style.visibility = "hidden";
+        contactPopup.style.opacity = 0;
+      }
+      /* copy email address */
+      const eMail = document.querySelector(".email");
+      const eMailCopyText = document.getElementById("emailCopyText");
+      const onMouseMove = (e) => {
+        emailCopyText.style.left = e.pageX + "px";
+        emailCopyText.style.top = e.pageY + "px";
+      };
+      eMail.addEventListener("mousemove", onMouseMove);
+      eMail.addEventListener("mouseover", function () {
+        eMailCopyText.style.display = "block";
+      });
+      eMail.addEventListener("mouseout", function () {
+        eMailCopyText.style.display = "none";
+        eMailCopyText.innerHTML =
+          "Click here to copy Jiwoo's email address :)!";
+      });
+      function clipBoard() {
+        navigator.clipboard.writeText(eMail.textContent);
+        eMailCopyText.innerHTML = "Copied!";
+      }
     </script>
     <script>
-        var w = window.innerWidth;
-        var tablet = 1390;
-        var smallTablet = 960;
-        var mobile = 500;
-        var smallMobile = 375;
-        if(w <= 1390 && w >= 960){
-            gsap.to(".text1", {y: 0, ease: "power.out", duration: .5, delay: .5});
-            gsap.to(".text2", {y: 66, ease: "power.out", duration: .6, delay: .7});
-            gsap.to(".text3", {y: 127, ease: "power.out", duration: .7, delay: 1.2});
-            console.log('tablet', w)
-        }else if (w <= 960 && w>= 500){
-            gsap.to(".text1", {y: 0, ease: "power.out", duration: .5, delay: .5});
-            gsap.to(".text2", {y: 34, ease: "power.out", duration: .6, delay: .7});
-            gsap.to(".text3", {y: 63, ease: "power.out", duration: .7, delay: 1});
-            console.log('smallTablet', w)
-        }else if (w <= 500 && w> 375){
-            gsap.to(".text1", {y: 0, ease: "power.out", duration: .5, delay: .5});
-            gsap.to(".text2", {y: 27, ease: "power.out", duration: .6, delay: .7});
-            gsap.to(".text3", {y: 53, ease: "power.out", duration: .7, delay: 1});
-            console.log('mobile', w)
-        }else if (w <= 375){
-            gsap.to(".text1", {y: 0, ease: "power.out", duration: .5, delay: .5});
-            gsap.to(".text2", {y: 27, ease: "power.out", duration: .6, delay: .7});
-            gsap.to(".text3", {y: 53, ease: "power.out", duration: .7, delay: 1});
-            console.log('smallMobile', w)
-        }else {
-            gsap.to(".text1", {y: 0, ease: "power.out", duration: .5, delay: .5});
-            gsap.to(".text2", {y: 60, ease: "power.out", duration: .6, delay: .7});
-            gsap.to(".text3", {y: 120, ease: "power.out", duration: .7, delay: 1.2});
-            console.log('desktop', w)
-        }
-
-
+      var w = window.innerWidth;
+      var tablet = 1390;
+      var smallTablet = 960;
+      var mobile = 500;
+      var smallMobile = 375;
+      if (w <= 1390 && w >= 960) {
+        gsap.to(".text1", {
+          y: 0,
+          ease: "power.out",
+          duration: 0.5,
+          delay: 0.5,
+        });
+        gsap.to(".text2", {
+          y: 66,
+          ease: "power.out",
+          duration: 0.6,
+          delay: 0.7,
+        });
+        gsap.to(".text3", {
+          y: 127,
+          ease: "power.out",
+          duration: 0.7,
+          delay: 1.2,
+        });
+        console.log("tablet", w);
+      } else if (w <= 960 && w >= 500) {
+        gsap.to(".text1", {
+          y: 0,
+          ease: "power.out",
+          duration: 0.5,
+          delay: 0.5,
+        });
+        gsap.to(".text2", {
+          y: 34,
+          ease: "power.out",
+          duration: 0.6,
+          delay: 0.7,
+        });
+        gsap.to(".text3", {
+          y: 63,
+          ease: "power.out",
+          duration: 0.7,
+          delay: 1,
+        });
+        console.log("smallTablet", w);
+      } else if (w <= 500 && w > 375) {
+        gsap.to(".text1", {
+          y: 0,
+          ease: "power.out",
+          duration: 0.5,
+          delay: 0.5,
+        });
+        gsap.to(".text2", {
+          y: 27,
+          ease: "power.out",
+          duration: 0.6,
+          delay: 0.7,
+        });
+        gsap.to(".text3", {
+          y: 53,
+          ease: "power.out",
+          duration: 0.7,
+          delay: 1,
+        });
+        console.log("mobile", w);
+      } else if (w <= 375) {
+        gsap.to(".text1", {
+          y: 0,
+          ease: "power.out",
+          duration: 0.5,
+          delay: 0.5,
+        });
+        gsap.to(".text2", {
+          y: 27,
+          ease: "power.out",
+          duration: 0.6,
+          delay: 0.7,
+        });
+        gsap.to(".text3", {
+          y: 53,
+          ease: "power.out",
+          duration: 0.7,
+          delay: 1,
+        });
+        console.log("smallMobile", w);
+      } else {
+        gsap.to(".text1", {
+          y: 0,
+          ease: "power.out",
+          duration: 0.5,
+          delay: 0.5,
+        });
+        gsap.to(".text2", {
+          y: 60,
+          ease: "power.out",
+          duration: 0.6,
+          delay: 0.7,
+        });
+        gsap.to(".text3", {
+          y: 120,
+          ease: "power.out",
+          duration: 0.7,
+          delay: 1.2,
+        });
+        console.log("desktop", w);
+      }
     </script>
-</body>
+  </body>
 </html>
